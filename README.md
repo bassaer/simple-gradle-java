@@ -14,4 +14,12 @@ $ gradle
 
 Welcome to Gradle 4.8.1!
 ....
+
+$ gradle run
+
+> Task :run
+Hello World
+
+BUILD SUCCESSFUL in 1s
+2 actionable tasks: 1 executed, 1 up-to-date
 ```
