@@ -1,6 +1,6 @@
 # simple-gradle-java
 
-download gradle
+## download gradle
 ```
 $ wget https://services.gradle.org/distributions/gradle-4.8.1-bin.zip
 
@@ -15,11 +15,26 @@ $ gradle
 Welcome to Gradle 4.8.1!
 ....
 
-$ gradle run
+```
+
+## run
+```
+~/simple-gradle-java master* localhost.localdomain 6m 39s
+❯ gradle build
+Download https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.pom
+Download https://repo.maven.apache.org/maven2/com/google/code/gson/gson-parent/2.8.5/gson-parent-2.8.5.pom
+Download https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar
+
+BUILD SUCCESSFUL in 5s
+5 actionable tasks: 5 executed
+
+~/simple-gradle-java master* localhost.localdomain 6s
+❯ gradle run
 
 > Task :run
-Hello World
+{"id":100,"name":"User1"}
 
-BUILD SUCCESSFUL in 1s
+BUILD SUCCESSFUL in 0s
 2 actionable tasks: 1 executed, 1 up-to-date
+
 ```
