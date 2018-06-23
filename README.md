@@ -38,3 +38,30 @@ BUILD SUCCESSFUL in 0s
 2 actionable tasks: 1 executed, 1 up-to-date
 
 ```
+
+## gradle wrapper
+```
+~/simple-gradle-java master localhost.localdomain
+❯ gradle wrapper --gradle-version=4.8.1
+
+BUILD SUCCESSFUL in 1s
+1 actionable task: 1 executed
+
+~/simple-gradle-java master* localhost.localdomain
+❯ ./gradlew build
+Downloading https://services.gradle.org/distributions/gradle-4.8.1-bin.zip
+........................................................................
+
+BUILD SUCCESSFUL in 2m 47s
+5 actionable tasks: 5 up-to-date
+
+~/simple-gradle-java master* localhost.localdomain 2m 48s
+❯ ./gradlew run
+
+> Task :run
+{"id":100,"name":"User1"}
+
+BUILD SUCCESSFUL in 0s
+2 actionable tasks: 1 executed, 1 up-to-date
+
+```
