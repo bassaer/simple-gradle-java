@@ -7,5 +7,7 @@ public class App {
     Gson gson = new Gson();
     User user = new User(100, "User1");
     System.out.println(gson.toJson(user));
+    System.out.println(user.getId());
+    System.out.println(user.getName());
   }
 }

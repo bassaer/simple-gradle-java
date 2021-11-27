@@ -1,4 +1,5 @@
 # simple-gradle-java
+[![Java CI](https://github.com/bassaer/simple-gradle-java/actions/workflows/ci.yml/badge.svg)](https://github.com/bassaer/simple-gradle-java/actions/workflows/ci.yml)
 
 ## download gradle
 ```
