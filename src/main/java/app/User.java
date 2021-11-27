@@ -1,4 +1,4 @@
-package hello;
+package app;
 
 class User {
   private int id;
