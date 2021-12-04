@@ -1,13 +1,16 @@
 package app;
 
-import com.google.gson.Gson;
+import app.tasks.JsonTask;
+import app.tasks.Task;
+import app.tasks.UserTask;
+
+import java.util.List;
 
 public class App {
   public static void main(String[] args) {
-    Gson gson = new Gson();
-    User user = new User(100, "User1");
-    System.out.println(gson.toJson(user));
-    System.out.println(user.getId());
-    System.out.println(user.getName());
+      List.of(
+          new UserTask(),
+          new JsonTask()
+      ).forEach(Task::run);
   }
 }
