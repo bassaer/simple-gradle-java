@@ -1,4 +1,4 @@
-package app;
+package app.models;
 
 import java.io.Serializable;
 
@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-class User implements Serializable{
+public class User implements Serializable{
   private int id;
   private String name;
 }

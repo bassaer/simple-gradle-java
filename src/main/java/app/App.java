@@ -1,19 +1,16 @@
 package app;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import app.tasks.JsonTask;
+import app.tasks.Task;
+import app.tasks.UserTask;
+
+import java.util.List;
 
 public class App {
   public static void main(String[] args) {
-    User user = new User(100, "User1");
-    System.out.println(user.getId());
-    System.out.println(user.getName());
-    String src = "{\"id\":123,\"name\":\"foo\"}";
-    ObjectMapper mapper = new ObjectMapper();
-    try {
-        System.out.println(mapper.readValue(src, User.class).getName());
-    } catch(JsonProcessingException e) {
-        System.out.println("Error: " + e.getLocalizedMessage());
-    }
+      List.of(
+          new UserTask(),
+          new JsonTask()
+      ).forEach(Task::run);
   }
 }
